@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myrecipes</title>
+    <title>My recipes</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,11 +12,8 @@
   <body>
     <%= render 'layouts/navigation' %>
     <div class="container">
-      <%= yield %>
+      <%= yield %>  
     </div>
+    <%= render 'layouts/footer' %>
   </body>
-  
-  <footer>
-    <%= render 'layouts/footer' %>  
-  </footer>
 </html>
